@@ -565,17 +565,13 @@ button:hover {
   font-size: 19px; 
 } 
 } 
-
-/* Contact Us*/
-
- 
-
+/**********************  Contact Us Page*****************/
 .contactUs
 {
+   background: linear-gradient(  90deg, #b3b019 0%, #b3b019 30%, #c9be2e 30% ,#c9be2e 100%);
     position: relative;
     width: 100%;
     padding: 40px 100px;
-   background: linear-gradient(to bottom,rgba(0,176,155,0.5), rgba(150,201,61,1));
 }
 .contactUs .title
 {
@@ -587,16 +583,17 @@ button:hover {
 }
 .contactUs .title h2
 {
+text-align: left;  
 color: #fff;
-font-weight: 500;
+font-weight: 400;
 }
 
-/* .....Ne BOx Class .......*/
+/* .....New BOx Class .......*/
 .form
 {
  grid-area: form;
 }
-.info1
+.info
 {
  grid-area: info;
 }
@@ -606,16 +603,15 @@ font-weight: 500;
 }
 .contact
 {
-    padding: 40px;
-    background: #fff;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+    padding: 20px;
+    background: #fff;  
 }
 .box
 {
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 4fr;
     grid-template-areas: 
     'form info'
     'form map';
@@ -625,7 +621,7 @@ font-weight: 500;
 .contact h3
 {
     color: #0e3959;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -652,7 +648,7 @@ font-weight: 500;
 {
     width: 100%;
 }
-/* .....  words Visible to user  .......*/
+/* .....  Words Visible to user  .......*/
 .inputbox span
 {
 color: #0c0b0c;
@@ -675,11 +671,11 @@ font-weight: 600;
     outline: none;
     border: 1px solid #333; 
     resize: none;
-    min-height: 220px;
+    min-height: 20px;
     margin-bottom: 10px;
 }
 
-/* .....Send BOtton .......*/
+/* ..........Send Button ..........*/
 .inputbox input[type="submit"] 
 {
 background: #a57816;
@@ -696,23 +692,22 @@ padding: 14px 15px;
 {
     color: #999;
 }
-/* ............................Info ........................*/
+/* ..................... Contact Info Boc  ........................*/
 
-.info1
+.info
 {
     background: #a57816;
 }
-.info1 h3{
+.info h3{
     color: #fff;
 }
-.info1 .infobox div
+.info .infobox div
 {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-   
+    margin-bottom: 10px;   
 }
-.info1 .infobox div span
+.info .infobox div span
 {
     min-width:  40px;
     color: #fff;
@@ -725,16 +720,14 @@ padding: 14px 15px;
     border-radius: 50px;   /* for wround shape */
     margin-right: 15px;
 }
-
 /***** Location Name***** */
-.info1 .infobox div p
+.info .infobox div p
 {
     color: #fff;
     font-size: 1.1em;
-
 }
 /***** Mail id and mobile****** */
-.info1 .infobox div a
+.info .infobox div a
 {
     color: #fff;  
     text-decoration: none;
@@ -751,7 +744,6 @@ padding: 14px 15px;
 {
     list-style: none;
     margin-right: 15px;
-
 }
 .sci li a
 {
@@ -783,7 +775,7 @@ padding: 14px 15px;
 {
  body 
 {
-    background: #6bacd8;
+    
 }
 .contactUs
 {
@@ -797,7 +789,7 @@ padding: 14px 15px;
     grid-template-rows: auto;
     grid-template-areas:
     "form"
-    "info1"
+    "info"
     "map" ;
 }
 .map
